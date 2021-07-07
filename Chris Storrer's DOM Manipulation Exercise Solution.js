@@ -1,4 +1,4 @@
-
+// Solutions to the 4.2.17 DOM Manipulation Exercises
 
 // 1. Select the section with an id of container without using querySelector.
 document.getElementById("container");
