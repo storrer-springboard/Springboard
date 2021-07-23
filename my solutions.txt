@@ -1,0 +1,33 @@
+Part I
+
+mkdir first
+cd first
+touch person.txt
+mv person.txt another.txt
+cp another.txt copy.txt
+rm copy.txt
+cp -r first second
+(rmdir removes empy directories
+rm -rf is used for directories with anything inside)
+rm -rf second
+
+Part II
+man is a command line interface for the system reference manuals
+to scroll press the arrow keys or the space bar or the pag up and page down keys. to get out press q.
+the -l flag for ls uses a long listing format
+the -a flag means "do not ignore entries that start with a full stop (.)"
+On my computer alt/option and the arrow keys doesn't do anything at all. I wish I had a Mac because then I wouldn't waste so much time trying things that don't apply to my OS.
+To jump between words on my Windows machine I press control + arrow keys. (the terminal handout says I am supposed to press the alt + arrow keys)
+Control + e jumps to the end of the line
+control + a " " " beginning of the line
+control + w deletes the word under the cursor
+A shell is the program that actually processes commands and returns output. Shells also manage background and foreground proceses.
+A terminal is a 'wrapper program' that runs the shell.
+An absolute path is specified starting from the root directory: /
+A relative path is specified relative to the current working directory.
+A flag is an option that can be passed to a command to change or enhance its effects. 
+ls -a lists directory contents including items starting with .
+rm -rf removes a directory that is not empty'
+ls -1 lists contents printing each entry on its own line
+the -f flag tells the rm command to ignore nonexistent files and arguments, and to never prompt
+the -r flag tells rm to remove directories and their contents recursively
