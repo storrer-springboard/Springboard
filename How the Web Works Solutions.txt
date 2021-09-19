@@ -1,0 +1,20 @@
+Christopher Storrer's Solutions for 14.1 Exercises
+
+What is HTTP?
+	HTTP is the acronym for the HyperText Transfer Protocol which is the 'language' for sending and recieving information on the internet.
+What is a URL?
+	URL is Uniform Resource Locator which is like an address for a file or website or application.
+What is DNS?
+	Domain Name System - analogous to a phone book for the internet in that it provides the IP address for a given URL.
+What is a query string?
+	The query string is a set of key value pairs added onto the end of a URL in an HTTP request.
+What are two HTTP verbs and how are they different?
+	GET sends a request for data from a server. POST sends data that will be added to the server or change something on the server.
+What is an HTTP request?
+	A request from a client to access a resource on a server.
+What is an HTTP response?
+	A response comes is sent from the server to the client.
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+	Headers allow the server or client to provide extra information about the request or response. Some examples include Content-Length, Content-Type, Last-Modified.
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+	The IP is found using a DNS. An HTTP request is sent to the IP address. The server responds and the browser renders the website. 
