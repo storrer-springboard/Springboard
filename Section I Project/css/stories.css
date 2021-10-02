@@ -15,9 +15,9 @@
   font-size: 150%;
   margin: 20px 30px;
 }
-
-.star,
-.trash-can {
+/* font-awesome styles */
+.fa-star,
+.fa-trash-alt {
   font-size: 1rem;
   margin: 0 2px;
 

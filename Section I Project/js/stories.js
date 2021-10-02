@@ -57,13 +57,12 @@ async function getAndShowStoriesOnStart() {
     
       const hostName = story.getHostName();
     
-      // if a user is logged in, show favorite/not-favorite star
-      const showStar = Boolean(currentUser);
+      const userLoggedIn = Boolean(currentUser);
     
       return $(`
           <li id="${story.storyId}">
-            ${showDeleteBtn ? getDeleteBtnHTML() : ""}
-            ${showStar ? getStarHTML(story, currentUser) : ""}
+            ${showDeleteBtn ? getDeleteBtnMarkup() : ""}
+            ${userLoggedIn ? getStarMarkup(story, currentUser) : ""}
             <a href="${story.url}" target="a_blank" class="story-link">
               ${story.title}
             </a>
@@ -73,22 +72,19 @@ async function getAndShowStoriesOnStart() {
           </li>
         `);
     }
-    /** Make delete button HTML for story */
 
-function getDeleteBtnHTML() {
-      return `
-          <span class="trash-can">
+function getDeleteBtnMarkup() {
+      return `<span class="trash-can">
             <i class="fas fa-trash-alt"></i>
           </span>`;
     }
     
-    /** Make favorite/not-favorite star for story */
+    /** Make favorite/not-favorite stars using Font-Awesome for story */
     
-    function getStarHTML(story, user) {
+    function getStarMarkup(story, user) {
       const isFavorite = user.isFavorite(story);
-      const starType = isFavorite ? "fas" : "far";
-      return `
-          <span class="star">
+      const starType = isFavorite ? "fas" : "far"; // fas = filled star, far = empty star
+      return `<span class="star">
             <i class="${starType} fa-star"></i>
           </span>`;
     }
@@ -96,7 +92,6 @@ function getDeleteBtnHTML() {
 /** Gets list of stories from server, generates their HTML, and puts on page. */
 
 function putStoriesOnPage() {
-      console.debug("putStoriesOnPage");
 
       $allStoriesList.empty();
 
@@ -110,10 +105,9 @@ function putStoriesOnPage() {
 }
 
 async function deleteStory(evt) {
-      console.debug("deleteStory");
     
-      const $closestLi = $(evt.target).closest("li");
-      const storyId = $closestLi.attr("id");
+      const $itemToEdit = $(evt.target).closest("li");
+      const storyId = $itemToEdit.attr("id");
     
       await storyList.removeStory(currentUser, storyId);
     
@@ -174,8 +168,8 @@ async function toggleStoryFavorite(evt) {
       console.debug("toggleStoryFavorite");
 
       const $tgt = $(evt.target);
-      const $closestLi = $tgt.closest("li");
-      const storyId = $closestLi.attr("id");
+      const $itemToEdit = $tgt.closest("li");
+      const storyId = $itemToEdit.attr("id");
       const story = storyList.stories.find(s => s.storyId === storyId);
 
       // see if the item is already favorited (checking by presence of star)
@@ -214,8 +208,8 @@ function putFavoritesListOnPage() {
 async function deleteStory(evt) {
       console.debug("deleteStory");
     
-      const $closestLi = $(evt.target).closest("li");
-      const storyId = $closestLi.attr("id");
+      const $itemToEdit = $(evt.target).closest("li");
+      const storyId = $itemToEdit.attr("id");
     
       await storyList.removeStory(currentUser, storyId);
     
