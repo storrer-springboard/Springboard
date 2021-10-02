@@ -246,7 +246,8 @@ class User {
             this.favorites = favData.data.user.favorites.map(story => new Story(story));
       }
       isFavorite(story) {
+            /* Returns a boolean indicating favorite or not */
             return this.favorites.some(s => (s.storyId === story.storyId));
-          }
+      }
 
 }

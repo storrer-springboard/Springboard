@@ -112,13 +112,13 @@ function updateUIOnUserLogin() {
       hidePageComponents();
       putStoriesOnPage();
       $allStoriesList.show();
-      
+
       updateNavOnLogin();
       createUserProfile();
 }
 function createUserProfile() {
-    
+
       $("#user-name").text(currentUser.name);
       $("#username").text(currentUser.username);
       $("#user-creation-date").text(currentUser.createdAt);
-    }
+}
