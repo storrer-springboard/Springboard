@@ -3,14 +3,6 @@
 // This is the global list of the stories, an instance of StoryList
 let storyList;
 
-/** Get and show stories when site first loads. */
-
-async function getAndShowStoriesOnStart() {
-      storyList = await StoryList.getStories();
-      $storiesLoadingMsg.remove();
-
-      putStoriesOnPage();
-}
 
 /**
  * A render method to render HTML for an individual Story instance
