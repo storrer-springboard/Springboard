@@ -1,15 +1,9 @@
-def capitalize(phrase):
-    """Capitalize first letter of first word of phrase.
+def compact(lst):
+    """Return a copy of lst with non-true elements removed.
 
-        >>> capitalize('python')
-        'Python'
-
-        >>> capitalize('only first word')
-        'Only first word'
     """
-
-    # there's a built-in method for this!
-    return phrase.capitalize()
-
-    # or, doing it by hand:
-    # return phrase[:1].upper() + phrase[1:]
+    true_list = []
+    for element in lst:
+        if element:
+            true_list.append(element)
+    return true_list
