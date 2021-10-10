@@ -1,16 +1,12 @@
 def multiple_letter_count(phrase):
     """Return dict of {ltr: frequency} from phrase.
-
-        >>> multiple_letter_count('yay')
-        {'y': 2, 'a': 1}
-
-        >>> multiple_letter_count('Yay')
-        {'Y': 1, 'a': 1, 'y': 1}
     """
-
-    counter = {}
-
-    for ltr in phrase:
-        counter[ltr] = counter.get(ltr, 0) + 1
-
-    return counter
+    # make a set of each unique letter in phrase
+    #  phrase.count(letter) for each unique letter in phrase
+    #       store the result in dict
+    unique_letters = set(phrase)
+    letter_count = dict()
+    for letter in unique_letters:
+        letter_count[letter] = phrase.count(letter)
+    return letter_count
+print(multiple_letter_count("Yay"))
