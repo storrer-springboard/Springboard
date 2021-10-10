@@ -5,25 +5,10 @@ def mode(nums):
     you do not need to worry about handling cases where more than one item
     occurs the same number of times.
 
-        >>> mode([1, 2, 1])
-        1
 
-        >>> mode([2, 2, 3, 3, 2])
-        2
     """
-
-    # Make frequency counter of num:freq
-    counts = {}
-
-    for num in nums:
-        counts[num] = counts.get(num, 0) + 1
-
-    # find the highest value (the most frequent number)
-
-    max_value = max(counts.values())
-
-    # now we need to see at which index the highest value is at
-
-    for (num, freq) in counts.items():
-        if freq == max_value:
-            return num
+    the_mode = 0
+    for number in nums:
+        if nums.count(number) > the_mode:
+            the_mode = number
+    return the_mode
