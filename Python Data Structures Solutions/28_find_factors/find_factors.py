@@ -13,8 +13,10 @@ def find_factors(num):
     >>> find_factors(321421)
     [1, 293, 1097, 321421]
     """
-    possible_factors = range(1, (num // 2) + 1)
-    factors = [factor for factor in possible_factors if not num % factor]
+    # possible integer factors are in the range such that:
+    # 1 <= possible factors <= (number / 2)
+    possible_factors = range(1, int(num / 2 + 1))
+    factors = [number for number in possible_factors if not num % number]
     # lastly, add num to list
     factors.append(num)
     return factors
