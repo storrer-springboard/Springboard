@@ -1,0 +1,10 @@
+
+   55  sudo service postgresql status
+   56  sudo service postgresql start
+   57  psql -U chris
+
+   59  sudo -u postgres createuser -s $(whoami); createdb $(whoami)
+   60  psql -U chris
+   62  man createdb
+   63  createdb poems_db
+   64  history

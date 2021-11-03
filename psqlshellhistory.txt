@@ -1,0 +1,26 @@
+\l
+\q
+\dt
+\d
+\q
+\l
+\c library
+ls;
+\dt
+select * from books;
+\q
+\l
+\c library
+\dt
+\h
+\h show
+show allshow titleselect * from books;
+\l
+\c library
+select * from books;
+select * from books;
+select author, title from books where author like 'D%' or 'E%';
+select author, title from books where author like 'D%' or like 'E%';
+select author, title from books where author like 'D%' or author like 'E%';
+select author, length(author) from books limit 5;
+\q

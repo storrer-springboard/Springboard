@@ -1,0 +1,134 @@
+    1  exit
+    2  version
+    3  help
+    4  variables
+    5  sudo apt-get update
+    6  $ sudo apt upgrade
+    7  sudo apt upgrade
+    8  sudo apt-get synaptic
+    9  sudo aptitude
+   10  sudo apt install synaptic
+   11  sudo synaptic
+   12  sudo apt install aptitude
+   13  sudo aptitude
+   14  echo history
+   15  cd /
+   16  sudo synaptic
+   17  pip freeze
+   18  sudo apt install python3-pip
+   19  pip install ipython
+   20  ipython
+   21  pip remove ipython
+   22  pip uninstall ipython
+   23  sudo apt install ipython
+   24  pip install ipython3
+   25  pip install ipython
+   26  ipython3
+   27  ipython
+   28  code ¬/.bashrc
+   29  sudo code ~/.bashrc
+   30  code ~/.bashrc
+   31  source ~/.bashrc
+   32  ipythonb
+   33  ipython
+   34  cd DESKTOP
+   35  cd c:\Desktop
+   36  history
+   37  cd /mnt/c/desktop/
+   38  history > howtofixPATHinUbuntu.txt
+   39  ls
+   40  cd /
+   41  pip install ipykernel
+   42  pip freeze
+   43  pip install jupyterlab
+   44  pip install sqlalchemy
+   45  pip install flask
+   46  pip install flask_debugtoolbar
+   47  pip installjupyter-client
+   48  pip install jupyter-client
+   49  pip install jupyter
+   50  pip install jupyter-server
+   51  dpkg -l
+   52  sudo apt install postgresql
+   53  psql -U chris
+   54  sudo start service postgres
+   55  sudo service postgres status
+   56  sudo service postgresql status
+   57  sudo service postgresql start
+   58  psql -U chris
+   59  sudo postgres createuser -s $(whoami); createdb $(whoami)
+   60  sudo -u postgres createuser -s $(whoami); createdb $(whoami)
+   61  psql -U chris
+   62  psql
+   63  man createdb
+   64  createdb poems_db
+   65  history
+   66  cd home
+   67  cd /
+   68  ls
+   69  cd home
+   70  ;s
+   71  ls
+   72  cd chris
+   73  ls
+   74  pwd
+   75  explorer
+   76  explorer.exe
+   77  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+   78  export PAGER=cat
+   79  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+   80  sudo service postgresql status
+   81  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+   82  export PAGER=cat
+   83  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+   84  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+   85  export PAGER=cat
+   86  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+   87  PS1='[PEXP\[\]ECT_PROMPT>' PS2='[PEXP\[\]ECT_PROMPT+' PROMPT_COMMAND=''
+   88  export PAGER=cat
+   89  display () {     TMPFILE=$(mktemp ${TMPDIR-/tmp}/bash_kernel.XXXXXXXXXX);     cat > $TMPFILE;     echo "bash_kernel: saved image data to: $TMPFILE" >&2; }
+   90  PS1='PEXPE\[\]CT_PROMPT>' PS2='PEXPE\[\]CT_PROMPT_' PROMPT_COMMAND=''
+   91  export TERM=dumb PAGER=cat
+   92  sudo service postgresql status
+   93  pip install bash_kernel
+   94  python -m bash_kernel.install
+   95  python3 -m bash_kernel.install
+   96  pip uninstall bash_kernel
+   97  jupyter kernelspec list
+   98  pip install calysto_bash
+   99  jupyter kernelspec list
+  100  jupyter notebook
+  101  jupyter kernelspec list
+  102  pip uninstall calysto_bash
+  103  jupyter kernelspec list
+  104  ls
+  105  mkdir
+  106  mkdir sql
+  107  ls
+  108  sudo service postgres status
+  109  sudo service postgresql status
+  110  sudo service postgresql start
+  111  ls
+  112  cd sql
+  113  ls
+  114  cd Learn-PostgreSQL
+  115  ls
+  116  psql -U chris < setup/00-forum-database.sql
+  117  psql man
+  118  man psql
+  119  pg_ctl status
+  120  ls
+  121  cd ..
+  122  ls
+  123  cd sql22.2
+  124  ls
+  125  psql -U chris < books.sql
+  126  psql
+  127  exit
+  128  psql 
+  129  psql
+  130  cd ..
+  131  ls
+  132  cd '22.2 SQL'
+  133  cd '22 SQL'
+  134  history > shell-history.txt

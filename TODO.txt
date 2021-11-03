@@ -1,0 +1,2 @@
+copy .psql_history to psqlshellhistory.txt
+move .ipynb's to jupyter drawer
